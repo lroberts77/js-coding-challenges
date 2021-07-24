@@ -7,7 +7,7 @@
 - Open any challenge Js file,
 - click on run in the top/left menu,
 - click run without debugging 
-- output will show in the terminal
+- output will show in the terminal (in debug console tab)
 
 
 
