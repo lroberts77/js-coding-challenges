@@ -7,4 +7,6 @@ isolateIt = (arr) => {
     })
     return b
   }
-  console.log(isolateIt(["abcd","efjgh"]));
+  console.log(isolateIt(["abcd","efjgh"]))
+  console.log(isolateIt(["abcde","fghijk"]))
+

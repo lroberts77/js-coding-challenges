@@ -6,3 +6,4 @@ multiTable = (number) => {
     return table
 }
 console.log(multiTable(5))
+console.log(multiTable(10))
