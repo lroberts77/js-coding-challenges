@@ -1,7 +1,7 @@
 doubleChar = (str) => {
     return str.split('').map((a) => a+a).join('')
 }
-console.log(doubleChar('hello'))
+console.log(doubleChar('3445'))
 console.log(doubleChar("Adidas"));
 
 //regex 
