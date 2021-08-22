@@ -1,15 +1,15 @@
-var vowels = [...'aeiou']
+const vowels = [...'aeiou']
 encode = (string) => {
-  var s = "";
-  for (var i = 0; i < string.length; i++) {
+  let s = "";
+  for (let i=0;i<string.length;i++) {
     s += vowels.indexOf(string[i])+1 || string[i];
   }
   return s;
 }
 
 decode = (string) => {
-  var s = "";
-  for (var i = 0; i < string.length; i++) {
+  let s = "";
+  for (let i=0;i<string.length;i++) {
     s += vowels[string[i]-1] || string[i];
   }
   return s;
