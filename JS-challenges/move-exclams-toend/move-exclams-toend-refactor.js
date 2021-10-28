@@ -6,4 +6,4 @@ console.log(remove("Hi! Hi!"));
 console.log(remove("Hi! !Hi Hi!"));
 console.log(remove("Hi! Hi!! Hi!"));
 
-// store everything that is [^!] 
+// store everything that is not a ! [^!] 
