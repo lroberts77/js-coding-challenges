@@ -1,5 +1,6 @@
 splitInParts = (s, partLength) => {
-    return s.match(new RegExp(".{1," + partLength + "}", "g")).join(' ')
+    return s.match(new RegExp(`.{1,${partLength}}`, 'g')).join(' ')
+    // return s.match(new RegExp(".{1," + partLength + "}", "g")).join(' ')
 }
 
 console.log(splitInParts("supercalifragilisticexpialidocious", 3));
