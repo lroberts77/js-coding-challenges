@@ -1,4 +1,4 @@
-persistence = function (num, counter = 0) {
+persistence = (num, counter = 0) => {
     if ([...`${num}`].length === 1)
         return counter;
     num = [...`${num}`].reduce((x, y) => x * y);
