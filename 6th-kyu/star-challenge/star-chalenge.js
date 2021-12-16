@@ -11,4 +11,3 @@ rotate = (str) => {
 
 console.log(rotate("Hello"));
 console.log(rotate("Hi"));
-
