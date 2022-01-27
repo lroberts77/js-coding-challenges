@@ -1,0 +1,3 @@
+digitize = (n) => {
+    return [...`${n}`].map(Number).reverse();
+}
