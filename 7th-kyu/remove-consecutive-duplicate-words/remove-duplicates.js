@@ -7,6 +7,6 @@ const removeConsecutiveDuplicates = (s) => {
       }
     }
     return ans.join(' ')
-}
+};
 
 console.log(removeConsecutiveDuplicates('alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta'));
