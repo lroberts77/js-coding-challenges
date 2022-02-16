@@ -1,7 +1,7 @@
 const getScore = (n) => {
-  let ans = 50;
-  for (let i = 1; i < n; i++) {
-    ans += (i + 1) * 50;
+  let ans = 0;
+  for (let i = 0; i <= n; i++) {
+    ans += i * 50;
   }
   return ans;
 };
