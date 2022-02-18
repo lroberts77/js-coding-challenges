@@ -1,7 +1,5 @@
 const isDivisible = (n, x, y) => {
-//   return n % x == 0 && n % y == 0 ? true : false;
-//   return n % x == 0 && n % y == 0
-return !(n%x || n%y)
+  return !(n % x || n % y);
 };
 
 console.log(isDivisible(3, 3, 4));
