@@ -8,7 +8,7 @@ Number.prototype.div = function(num) { return this / num };
 
 Number.prototype.pow = function(num) { return this ** num };
 
-Number.prototype.sqr = function(num) { return Math.sqrt(this) };
+Number.prototype.sqr = function() { return Math.sqrt(this) };
 
 let n = 25;
 
