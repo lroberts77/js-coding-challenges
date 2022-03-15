@@ -4,14 +4,8 @@ const WhatIsTheTime = (timeInMirror) => {
     let hours = mins == '00' ? `${12 - formathours}`.padStart(2,'0') : `${11 - formathours}`.padStart(2,'0');
     if (hours == 0) hours = 12;
     if (hours == -1) hours = 11;
-        // formathours == 12 && mins == 00 ? `12` :
-        // formathours == 00 && mins == 00 ? `00` :
-        // formathours == 12 && mins > 0 ? 11 :
-        // formathours == 11 && mins > 0 ? 12 :
-        // mins > 00 ? `${11 - formathours}`.padStart(2,'0') :
-        // `${12 - formathours}`.padStart(2,'0')
     return `${hours}:${mins}`
-  }
+}
 
   console.log(WhatIsTheTime("06:35"));
   console.log(WhatIsTheTime("11:59"));
