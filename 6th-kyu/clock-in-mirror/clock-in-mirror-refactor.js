@@ -2,8 +2,7 @@ const WhatIsTheTime = (timeInMirror) => {
     let [formathours,formatmins] = timeInMirror.split(':')
     let mins = formatmins > 00 ? `${60-formatmins}`.padStart(2,'0') : `00`
     let hours = mins == '00' ? `${12 - formathours}`.padStart(2,'0') : `${11 - formathours}`.padStart(2,'0');
-    if (hours == 0) hours = 12;
-    if (hours == -1) hours = 11;
+    hours = hours == 0 ? 12 : hours == -1 ? 11 : hours
     return `${hours}:${mins}`
 }
 
