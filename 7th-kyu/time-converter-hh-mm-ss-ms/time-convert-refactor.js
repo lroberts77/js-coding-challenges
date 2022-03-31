@@ -1,8 +1,5 @@
 const convert = (time) => {
-    console.log(time.toString());
-    console.log(time.toJSON());
   return time.toISOString().slice(11, 23).replace(`.`, `,`);
-
 };
 
 console.log(convert(new Date(2016, 2, 8, 16, 42, 59)));
