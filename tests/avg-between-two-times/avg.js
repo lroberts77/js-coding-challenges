@@ -8,5 +8,5 @@ const avgTime = (time1, time2) => {
   return `${hoursAvg}:${minsAvg}:${secondsAvg}`;
 };
 
-console.log(avgTime("02:32:45", "02:34:25"));
+console.log(avgTime("02:32:45", "02:33:25"));
 console.log(avgTime("03:33:10", "09:44:30"));
