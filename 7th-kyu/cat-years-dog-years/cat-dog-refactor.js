@@ -1,7 +1,4 @@
 const humanYearsCatYearsDogYears = (humanYears) => {
-  let catYears = 0,
-    dogYears = 0;
-
   return humanYears < 2
     ? [humanYears, humanYears * 15, humanYears * 15]
     : humanYears == 2
