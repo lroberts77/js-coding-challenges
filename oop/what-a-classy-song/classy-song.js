@@ -2,15 +2,15 @@ class Song {
   constructor(artist, title) {
     this.artist = artist;
     this.title = title;
-    this.viewers = []
+    this.listeners = []
   }
-  howMany(listeners){
-    listeners = listeners.map(e => e.toLowerCase())
+  howMany(todaysListeners){
+    todaysListeners = todaysListeners.map(e => e.toLowerCase())
     let result = [];
-    for(let i = 0; i < listeners.length; i++){
-      if(!this.viewers.includes(listeners[i])){
-        result.push(listeners[i])
-        this.viewers.push(listeners[i])
+    for(let i = 0; i < todaysListeners.length; i++){
+      if(!this.listeners.includes(todaysListeners[i])){
+        result.push(todaysListeners[i])
+        this.listeners.push(todaysListeners[i])
       }
     }
     return result.length
