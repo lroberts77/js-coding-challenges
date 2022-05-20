@@ -1,0 +1,14 @@
+const squareIt = (int) => {
+  let square = Math.sqrt([...`${int}`].length);
+  return square % 1
+    ? "Not a perfect square!"
+    : int
+        .toString()
+        .match(new RegExp(".{" + square + "}", "g"))
+        .join("\n");
+};
+
+console.log(squareIt(1), "1");
+console.log(squareIt(222), "Not a perfect square!");
+console.log(squareIt(234562342342), "Not a perfect square!");
+console.log(squareIt(112141568), "112\n141\n568");
