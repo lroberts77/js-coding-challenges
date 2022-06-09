@@ -3,11 +3,11 @@ const getChange = (amount) => {
     amount *= 100; // Convert to number of pennies
   }
   const denomination = { '1p': 1, '2p': 2, '5p': 5, '10p': 10, '20p': 20, '50p': 50, '£1': 100, '£2': 200 };
-  var denominations = [1, 2, 5, 10, 20, 50, 100, 200]; // pennies
+  // var denominations = [1, 2, 5, 10, 20, 50, 100, 200]; // pennies
   var result = [];
   while (amount > 0) {
       let coinValue = Object.entries(denomination).pop()
-      denomination  = 
+      // denomination  = 
       var coin = coinValue.pop(); // Get next greatest coin
       var count = Math.floor(amount/coin); // See how many times I need that coin
       amount -= count * coin; // Reduce the amount with that number of coins
