@@ -5,9 +5,8 @@ var list1 = [
 ];
 
 const greetDevelopers = (list) => {
-
   for(let i=0;i<list.length;i++) {
-    list[i].greeting = `Hi ${list1[i].firstName}, what do you like most ${list1[i].language}`
+    list[i].greeting = `Hi ${list[i].firstName}, what do you like the most about ${list[i].language}?`
   }
   return list
 }

@@ -26,7 +26,7 @@ const getChange = (amount) => {
   return result.map(([count, coinstring]) => `${count} ${coinstring}`).join(', ')
 }
 
-console.log(getChange('£2'));
+console.log(getChange('££2'));
 console.log(getChange(1.23));
 console.log(getChange(523));
 console.log(getChange(5.23));
