@@ -1,7 +1,16 @@
+// const sevenAte9 = (str) => {
+//   let answer = ''
+//   for(let i=0;i<str.length;i++) {
+//     str[i] == '9' && str[i-1] == '7' && str[i+1] == '7' ? answer += '' : answer += str[i] 
+//   }
+//   return answer
+// }
+
 const sevenAte9 = (str) => {
   let answer = ''
   for(let i=0;i<str.length;i++) {
-    str[i] == '9' && str[i-1] == '7' && str[i+1] == '7' ? answer += '' : answer += str[i] 
+    if (str[i] == '9' && str[i-1] == '7' && str[i+1] == '7') continue 
+    else answer += str[i] 
   }
   return answer
 }
