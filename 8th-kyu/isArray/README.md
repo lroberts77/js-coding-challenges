@@ -61,4 +61,4 @@ Examples
 blackAndWhite(5,13) should return "It's a fake array"
 blackAndWhite([5,13]) should return "It's a black array"
 blackAndWhite([5,12]) should return "It's a white array" 
-Using string template and ternary operator can make your work easier.
+using string template and ternary operator can make your work easier.
